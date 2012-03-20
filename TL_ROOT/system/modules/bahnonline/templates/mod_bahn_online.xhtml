@@ -2,7 +2,7 @@
 <div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
 
 	<?php if ($this->headline): ?>
-		<div class="headline"><<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>></div>
+	<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
 	<?php endif; ?>
 
 	<table border="0" cellspacing="0" cellpadding="0" summary="Deutsche Bahn AG">
