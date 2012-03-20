@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE contaopackage>
+<extension name="bahnonline" date="20110812">
+    <author user="barkowsky" name="Bernd Barkowsky" website="http://www.complus-ag.net" />
+    <copyright>(c) 2008 - 2010 97Media and COMplus AG</copyright>
+    <license>LGPL</license>
+    <classification type="free" category="utility" />
+    <release version="40009" build="4" date="20100823" />
+    <contao minversion="20050099" maxversion="20090019" />
+    <language code="en">
+        <translator user="barkowsky" name="Bernd Barkowsky" website="http://www.complus-ag.net" />
+        <title>Bahn online</title>
+        <teaser>This module will show you the Bahn.de arrival form.</teaser>
+        <description>This module will show you the Bahn.de arrival form.</description>
+        <shop link="https://www.amazon.de/registry/wishlist/1IB2P3A3AJRCD" />
+    </language>
+    <language code="de">
+        <translator user="barkowsky" name="Bernd Barkowsky" website="http://www.complus-ag.net" />
+        <title>Bahn online</title>
+        <teaser>Das Modul ist eine Anbindung an die Bahnauskunft (Bahn.de)</teaser>
+        <description>Das Modul ist eine Anbindung an die Bahnauskunft (Bahn.de).</description>
+        <shop link="https://www.amazon.de/registry/wishlist/1IB2P3A3AJRCD" />
+    </language>
+</extension>
