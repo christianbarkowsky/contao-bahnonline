@@ -29,6 +29,9 @@
  */
 
 
+/**
+ * Front end modules
+ */
 array_insert($GLOBALS['FE_MOD']['miscellaneous'], 0, array
 (
 	'bahn_online' => 'ModuleBahnOnline')
