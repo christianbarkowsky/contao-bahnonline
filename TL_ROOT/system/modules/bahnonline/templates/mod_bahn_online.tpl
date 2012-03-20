@@ -10,8 +10,8 @@
 		<td>
 			<form action="http://reiseauskunft.bahn.de/bin/query.exe/dn" name="formschnellsuche" id="formschnellsuche" method="post" target="_blank">
 			<input type="hidden" value="custom" name="datesel"/>
-			<input type="hidden" value="1 name="start"/>
-			<input type="hidden" value="depart" name="returnTimesel"/>
+			<input type="hidden" value="1" name="start" />
+			<input type="hidden" value="depart" name="returnTimesel" />
 
 				<table border="0" cellspacing="0" cellpadding="0" summary="bahn Online">
 				<tr>
@@ -51,7 +51,7 @@
 				</tr>
 				<tr>
 					<td>&nbsp;</td>
-					<td align="right"><input type="hidden" name="start" value="<?php echo $this->bahnonline_search; ?>" /><input type="submit" name="start" value="<?php echo $this->bahnonline_search; ?>" class="inputbutton" /></td>
+					<td align="right"><input type="hidden" name="start" value="<?php echo $this->bahnonline_search; ?>" /><input type="submit" name="startSearch" value="<?php echo $this->bahnonline_search; ?>" class="inputbutton" /></td>
 				</tr>
 				</table>
 			</form>
