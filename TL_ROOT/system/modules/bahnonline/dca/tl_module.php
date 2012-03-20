@@ -29,6 +29,6 @@
  */
 
 
-$GLOBALS['TL_DCA']['tl_module']['palettes']['bahn_online'] = '{title_legend},name,type,headline;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['bahn_online'] = '{title_legend},name,headline,type;{protected_legend:hide},protected;{expert_legend:hide},guests,cssID,space';
 
 ?>
