@@ -1,8 +1,8 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2010 Leo Feyer
+ * Copyright (C) 2005-2012 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,32 +21,33 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Christian Barkowsky 2008-2010 // 97Media & COMplus AG
- * @author     Christian Barkowsky <office@97media.de>
+ * @copyright  Christian Barkowsky 2008-2012
+ * @author     Christian Barkowsky <http://www.christianbarkowsky.de>
  * @package    BahnOnline
  * @license    LGPL
  * @filesource
  */
 
+
 class ModuleBahnOnline extends Module
 {
-	/**
-	 * Template file
-	 * @var string
-	 */
 	protected $strTemplate = 'mod_bahn_online';
 
 
 	/**
 	 * Display a wildcard in the back end
-	 * @return string
 	 */
 	public function generate()
 	{
 		if (TL_MODE == 'BE')
 		{
 			$objTemplate = new BackendTemplate('be_wildcard');
-			$objTemplate->wildcard = '### Bahn Online ###';
+
+			$objTemplate->wildcard = '### Bahn online ###';
+			$objTemplate->title = $this->headline;
+			$objTemplate->id = $this->id;
+			$objTemplate->link = $this->name;
+			$objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
 
 			return $objTemplate->parse();
 		}
@@ -56,7 +57,7 @@ class ModuleBahnOnline extends Module
 
 
 	/**
-	 * Get all records and add them to an array
+	 * Compile
 	 */
 	protected function compile()
 	{

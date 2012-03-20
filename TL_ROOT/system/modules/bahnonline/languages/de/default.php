@@ -1,8 +1,8 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2010 Leo Feyer
+ * Copyright (C) 2005-2012 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,12 +21,13 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Christian Barkowsky 2008-2010 // 97Media & COMplus AG
- * @author     Christian Barkowsky <office@97media.de>
+ * @copyright  Christian Barkowsky 2008-2012
+ * @author     Christian Barkowsky <http://www.christianbarkowsky.de>
  * @package    BahnOnline
  * @license    LGPL
  * @filesource
  */
+
 
 $GLOBALS['TL_LANG']['MSC']['bahnonline_from'] = "von:";
 $GLOBALS['TL_LANG']['MSC']['bahnonline_from_alt'] = "Hier bitte den Startpunkt Ihrer Reise eingeben";
@@ -39,7 +40,6 @@ $GLOBALS['TL_LANG']['MSC']['bahnonline_time_alt'] = "Hier bitte die Uhrzeit Ihre
 $GLOBALS['TL_LANG']['MSC']['bahnonline_departure'] = "Abfahrt";
 $GLOBALS['TL_LANG']['MSC']['bahnonline_arrival'] = "Ankunft";
 $GLOBALS['TL_LANG']['MSC']['bahnonline_search'] = "Anzeigen";
-
 $GLOBALS['TL_LANG']['MSC']['bahnonline_from_input'] = "Ort, Stra&szlig;e Hausnr.";
 $GLOBALS['TL_LANG']['MSC']['bahnonline_to_input'] = "Ort, Stra&szlig;e Hausnr.";
 

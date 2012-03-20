@@ -1,8 +1,8 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2010 Leo Feyer
+ * Copyright (C) 2005-2012 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,8 +21,8 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Christian Barkowsky 2008-2010 // 97Media & COMplus AG
- * @author     Christian Barkowsky <office@97media.de>
+ * @copyright  Christian Barkowsky 2008-2012
+ * @author     Christian Barkowsky <http://www.christianbarkowsky.de>
  * @package    BahnOnline
  * @license    LGPL
  * @filesource
@@ -32,11 +32,12 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD']['bahn_online'] = array('Bahn Online', 'Anreisebutton Bahn.de');
+$GLOBALS['TL_LANG']['MOD']['bahn_online'] = array('Bahn online', 'Anreisebutton Bahn.de');
+
 
 /**
  * Front end modules
  */
-$GLOBALS['TL_LANG']['FMD']['bahn_online'] = array('Bahn Online', 'Anreisebutton Bahn.de');
+$GLOBALS['TL_LANG']['FMD']['bahn_online'] = array('Bahn online', 'Anreisebutton Bahn.de');
 
 ?>
