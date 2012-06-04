@@ -29,13 +29,32 @@
 				<tr>
 					<td><?php echo $this->bahnonline_date; ?></td>
 					<td>
-						<input type="text" value="<?php echo date("d.m.Y"); ?>" title="<?php echo $this->bahnonline_date_alt; ?>" id="date" name="date" class="setinput">
-						&nbsp;
+						<input type="text" value="<?php echo date("d.m.Y"); ?>" title="<?php echo $this->bahnonline_date_alt; ?>" id="date" name="date" class="setinput">						
+						<?php if ($this->datepicker): ?>
+						<img src="plugins/datepicker/icon.gif" width="20" height="20" alt="" id="toggle_date" style="vertical-align:-6px">
+						<script>
+						window.addEvent("domready", function()
+						{
+							new Picker.Date($$("#date"),
+							{
+								draggable:false,
+								toggle:$$("#toggle_date"),
+								format:"%d.%m.%Y",
+								positionOffset:{x:-197,y:-182},
+								pickerClass:"datepicker_dashboard",
+								useFadeInOut:!Browser.ie,
+								startDay:<?php echo $GLOBALS['TL_LANG']['MSC']['weekOffset'] ?>,
+								titleFormat:"<?php echo $GLOBALS['TL_LANG']['MSC']['titleFormat'] ?>'"
+							});
+						});
+						</script>						
+						<?php else: ?>
 						<script type="text/javascript">
 						<!--//--><![CDATA[//><!--
 							window.addEvent('domready', function() { new Calendar({ date: 'd.m.Y' }, { navigation: 2, days: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'], months: ['Januar','Februar','M&auml;rz','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'], offset: 1, titleFormat: 'l, d. F Y' }); });
 						//--><!]]>
-						</script>
+						</script>						
+						<?php endif; ?>						
 					</td>
 				</tr>
 				<tr>

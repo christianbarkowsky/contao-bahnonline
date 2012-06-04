@@ -61,15 +61,16 @@ class ModuleBahnOnline extends Module
 	 */
 	protected function compile()
 	{
-		if (version_compare('2.9.0', $GLOBALS['TL_CONFIG']['latestVersion'], '<'))
-		{
-			$GLOBALS['TL_CSS'][] = 'plugins/calendar/css/calendar.css';
-			$GLOBALS['TL_JAVASCRIPT'][] = 'plugins/calendar/js/calendar.js';
-		}
-		else
+		if (version_compare('2.9.0', $GLOBALS['TL_CONFIG']['latestVersion'], '>='))
 		{
 			$GLOBALS['TL_CSS'][] = 'plugins/calendar/calendar.css';
 			$GLOBALS['TL_JAVASCRIPT'][] = 'plugins/calendar/calendar.js';
+		}
+		else
+		{
+			$GLOBALS['TL_CSS'][] = 'plugins/datepicker/dashboard.css';
+        	$GLOBALS['TL_JAVASCRIPT'][] = 'plugins/datepicker/datepicker.js';
+        	$this->Template->datepicker = true;
 		}
 
 		$this->Template->bahnonline_from = $GLOBALS['TL_LANG']['MSC']['bahnonline_from'];
